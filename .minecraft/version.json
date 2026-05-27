@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "packId": "foundry-frontier",
+  "packName": "Foundry & Frontier",
+  "version": "1.0.0",
+  "minecraft": "1.20.1",
+  "loader": "forge",
+  "loaderVersion": "47.4.20"
+}
