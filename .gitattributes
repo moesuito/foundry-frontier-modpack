@@ -1,0 +1,12 @@
+# Protect binary assets. Do not force line endings for Minecraft configs;
+# many mod-generated files use CRLF locally and should not create noise.
+*.jar binary
+*.zip binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.dat binary
+*.mca binary
+*.nbt binary

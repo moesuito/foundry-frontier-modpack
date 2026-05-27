@@ -1,3 +1,9 @@
 .minecraft/CLAUDE.md
 .minecraft/KEYBINDS.md
 .minecraft/saves
+AGENTS.md
+CLAUDE.md
+_codex/
+_update/
+server/
+*.zip

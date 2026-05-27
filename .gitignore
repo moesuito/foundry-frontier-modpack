@@ -1,0 +1,68 @@
+# Deny by default. This repository publishes the player modpack source.
+*
+
+# Repository metadata and launcher files.
+!/.gitignore
+!/.gitattributes
+!/.packignore
+!/instance.cfg
+!/mmc-pack.json
+!/icon.png
+
+# Prism/PolyMC instance payload. Keep the .minecraft wrapper because GitHub
+# source archives are used as installable master/base releases.
+!/.minecraft/
+/.minecraft/*
+!/.minecraft/version.json
+!/.minecraft/icon.png
+!/.minecraft/mods/
+!/.minecraft/mods/**
+!/.minecraft/config/
+!/.minecraft/config/**
+!/.minecraft/defaultconfigs/
+!/.minecraft/defaultconfigs/**
+!/.minecraft/kubejs/
+!/.minecraft/kubejs/**
+!/.minecraft/coremods/
+!/.minecraft/coremods/**
+!/.minecraft/resourcepacks/
+!/.minecraft/resourcepacks/**
+!/.minecraft/shaderpacks/
+!/.minecraft/shaderpacks/**
+!/.minecraft/texturepacks/
+!/.minecraft/texturepacks/**
+!/.minecraft/patchouli_books/
+!/.minecraft/patchouli_books/**
+!/.minecraft/moonlight-global-datapacks/
+!/.minecraft/moonlight-global-datapacks/**
+
+# Runtime/local data must never enter GitHub releases.
+/.minecraft/config/jei/world/
+/.minecraft/disabledmods/
+/.minecraft/saves/
+/.minecraft/logs/
+/.minecraft/screenshots/
+/.minecraft/journeymap/
+/.minecraft/Distant_Horizons_server_data/
+/.minecraft/server-resource-packs/
+/.minecraft/local/
+/.minecraft/modernfix/
+/.minecraft/options.txt
+/.minecraft/servers.dat
+/.minecraft/servers.dat_old
+/.minecraft/usercache.json
+/.minecraft/usernamecache.json
+/.minecraft/KEYBINDS.md
+/.minecraft/CLAUDE.md
+/.minecraft/patchouli_data.json
+/.minecraft/rhino.local.properties
+
+# Agent/dev/server/update artifacts are local only.
+/AGENTS.md
+/CLAUDE.md
+/_codex/
+/_update/
+/server/
+/master/
+/patches/
+*.zip
