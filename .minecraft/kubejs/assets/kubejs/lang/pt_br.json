@@ -1,0 +1,12 @@
+{
+  "item.kubejs.industrial_machine_frame": "Chassi de Máquina Industrial",
+  "item.kubejs.electromechanical_control_unit": "Unidade de Controle Eletromecânica",
+  "item.kubejs.thermal_regulation_core": "Núcleo de Regulagem Térmica",
+  "item.kubejs.pressurized_alloy_core": "Núcleo de Liga Pressurizado",
+  "item.kubejs.high_precision_industrial_core": "Núcleo Industrial de Alta Precisão",
+  "item.kubejs.excavation_control_matrix": "Matriz de Controle de Escavação",
+  "item.kubejs.unprocessed_silicon": "Silício Não Processado",
+  "item.kubejs.basic_processor_base": "Base de Processador Básico",
+  "item.kubejs.improved_processor_base": "Base de Processador Melhorado",
+  "item.kubejs.advanced_processor_base": "Base de Processador Avançado"
+}
