@@ -8,6 +8,7 @@
 !/instance.cfg
 !/mmc-pack.json
 !/icon.png
+!/README.md
 
 # Prism/PolyMC instance payload. Keep the .minecraft wrapper because GitHub
 # source archives are used as installable master/base releases.
