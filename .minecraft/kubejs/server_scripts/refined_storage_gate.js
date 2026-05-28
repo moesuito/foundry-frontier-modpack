@@ -30,16 +30,33 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'refinedstorage:disk_drive' })
 
   // --- LIGA BASE & ESTRUTURA ---
-  // 1. Quartz Enriched Iron (Requires steel plates)
-  event.shaped('4x refinedstorage:quartz_enriched_iron', [
-    'SSS',
-    'QRQ',
-    'SSS'
-  ], {
-    S: '#forge:plates/steel', // Steel plates instead of ingots
-    Q: 'minecraft:quartz',
-    R: 'minecraft:redstone'
-  }).id('foundry_frontier:refinedstorage/quartz_enriched_iron_gated')
+  // 1. Quartz Enriched Iron (Requires Immersive Engineering Arc Furnace)
+  event.remove({ output: 'refinedstorage:quartz_enriched_iron' })
+  event.custom({
+    type: 'immersiveengineering:arc_furnace',
+    results: [
+      {
+        item: 'refinedstorage:quartz_enriched_iron',
+        count: 4
+      }
+    ],
+    input: {
+      count: 3,
+      base_ingredient: {
+        tag: 'forge:ingots/steel'
+      }
+    },
+    additives: [
+      {
+        item: 'minecraft:quartz'
+      }
+    ],
+    slag: {
+      item: 'immersiveengineering:slag'
+    },
+    time: 100,
+    energy: 51200
+  }).id('foundry_frontier:refinedstorage/quartz_enriched_iron_arc_furnace')
 
   // 2. Machine Casing (Requires Industrial Machine Frame)
   event.shaped('refinedstorage:machine_casing', [
