@@ -46,4 +46,26 @@ StartupEvents.registry('item', event => {
     .displayName('Excavation Control Matrix')
     .tooltip('Mineral-mapping matrix descended from the IE Excavator')
     .maxStackSize(16)
+
+  // Refined Storage Gating - Unprocessed Silicon
+  event.create('unprocessed_silicon')
+    .displayName('Unprocessed Silicon')
+    .tooltip('Raw mixture of sand and quartz waiting to be chemically infused')
+    .maxStackSize(64)
+
+  // Refined Storage Gating - Processor Bases
+  event.create('basic_processor_base')
+    .displayName('Basic Processor Base')
+    .tooltip('Unfinished basic processor board, needs carbon infusion')
+    .maxStackSize(64)
+
+  event.create('improved_processor_base')
+    .displayName('Improved Processor Base')
+    .tooltip('Unfinished improved processor board, needs redstone infusion')
+    .maxStackSize(64)
+
+  event.create('advanced_processor_base')
+    .displayName('Advanced Processor Base')
+    .tooltip('Unfinished advanced processor board, needs diamond infusion')
+    .maxStackSize(64)
 })
