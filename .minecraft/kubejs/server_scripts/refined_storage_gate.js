@@ -28,6 +28,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'refinedstorage:advanced_processor' })
   event.remove({ output: 'refinedstorage:controller' })
   event.remove({ output: 'refinedstorage:disk_drive' })
+  event.remove({ output: 'refinedstorage:wireless_transmitter' })
 
   // --- LIGA BASE & ESTRUTURA ---
   // 1. Quartz Enriched Iron (Requires Immersive Engineering Arc Furnace)
@@ -165,4 +166,17 @@ ServerEvents.recipes(event => {
     M: 'refinedstorage:machine_casing',
     H: 'immersiveengineering:capacitor_mv' // IE MV
   }).id('foundry_frontier:refinedstorage/disk_drive_gated')
+
+  // 9. Wireless Transmitter (Requires Aerial Pearl and Electromechanical Control Unit)
+  event.shaped('refinedstorage:wireless_transmitter', [
+    'QAQ',
+    'CDC',
+    'QEQ'
+  ], {
+    Q: 'refinedstorage:quartz_enriched_iron',
+    A: 'powah:aerial_pearl',
+    C: 'refinedstorage:construction_core',
+    D: 'refinedstorage:destruction_core',
+    E: 'kubejs:electromechanical_control_unit'
+  }).id('foundry_frontier:refinedstorage/wireless_transmitter_gated')
 })

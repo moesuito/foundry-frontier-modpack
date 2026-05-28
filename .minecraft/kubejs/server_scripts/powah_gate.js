@@ -135,6 +135,20 @@ ServerEvents.recipes(event => {
     }
   }).id('foundry_frontier:powah/energizing/crystal_nitro')
 
+  // Uraninite Alternative Recipe: 1x uranium ingot + 1x redstone + 5k FE
+  event.custom({
+    type: 'powah:energizing',
+    ingredients: [
+      { tag: 'forge:ingots/uranium' },
+      { item: 'minecraft:redstone' }
+    ],
+    energy: 5000,
+    result: {
+      item: 'powah:uraninite',
+      count: 1
+    }
+  }).id('foundry_frontier:powah/energizing/uraninite')
+
   // 4. Rebalance Capacitors (Progression Lock)
   event.remove({ output: 'powah:capacitor_basic_tiny' })
   event.remove({ output: 'powah:capacitor_basic' })
