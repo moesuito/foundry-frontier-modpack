@@ -30,13 +30,13 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'refinedstorage:disk_drive' })
 
   // --- LIGA BASE & ESTRUTURA ---
-  // 1. Quartz Enriched Iron (Requires canonical steel)
+  // 1. Quartz Enriched Iron (Requires steel plates)
   event.shaped('4x refinedstorage:quartz_enriched_iron', [
     'SSS',
     'QRQ',
     'SSS'
   ], {
-    S: '#forge:ingots/steel',
+    S: '#forge:plates/steel', // Steel plates instead of ingots
     Q: 'minecraft:quartz',
     R: 'minecraft:redstone'
   }).id('foundry_frontier:refinedstorage/quartz_enriched_iron_gated')
