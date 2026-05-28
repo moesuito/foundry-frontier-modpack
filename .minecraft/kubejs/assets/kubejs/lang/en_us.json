@@ -1,0 +1,12 @@
+{
+  "item.kubejs.industrial_machine_frame": "Industrial Machine Frame",
+  "item.kubejs.electromechanical_control_unit": "Electromechanical Control Unit",
+  "item.kubejs.thermal_regulation_core": "Thermal Regulation Core",
+  "item.kubejs.pressurized_alloy_core": "Pressurized Alloy Core",
+  "item.kubejs.high_precision_industrial_core": "High-Precision Industrial Core",
+  "item.kubejs.excavation_control_matrix": "Excavation Control Matrix",
+  "item.kubejs.unprocessed_silicon": "Unprocessed Silicon",
+  "item.kubejs.basic_processor_base": "Basic Processor Base",
+  "item.kubejs.improved_processor_base": "Improved Processor Base",
+  "item.kubejs.advanced_processor_base": "Advanced Processor Base"
+}
